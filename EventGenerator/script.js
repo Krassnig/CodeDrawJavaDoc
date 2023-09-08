@@ -74,7 +74,7 @@ const generateBoilerplate = (config) => {
 	codeLines.push(...generateEvents(config).map(line => '\t\t\t' + line));
 
 	codeLines.push(``);
-	codeLines.push(`\t\t\t// Your rendering logic goes here`);
+	codeLines.push(`\t\t\t// Your drawing logic goes here`);
 	codeLines.push(``);
 	codeLines.push(`\t\t}`);
 	codeLines.push(`\t}`);
