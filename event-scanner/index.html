@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="./prism.css">
+		<script src="./prism.js" data-manual defer></script>
+
+		<link href="./style.css" rel="stylesheet" />
+		<script src="./script.js" defer></script>
+	</head>
+	<body>
+		<div class="content">
+			<h1>CodeDraw Event Code Generator</h1>
+			<div class="links">
+				<a href="https://github.com/Krassnig/CodeDraw">CodeDraw Github Repository</a>
+				<a href="../">Back to CodeDraw JavaDoc</a>
+			</div>
+			<hr>
+			<div style="display: flex; flex-direction: column;">
+				<label>
+					<input type="checkbox" checked id="switch-pattern" />
+					Use switch pattern matching (only available in Java preview versions 17/18/19/20)
+				</label>
+				<label>
+					<input type="checkbox" checked id="tabs" />
+					Use tabs
+				</label>
+				<label>
+					<input type="checkbox" checked id="boilerplate" />
+					Include boilerplate
+				</label>
+			</div>
+			<hr>
+			<div style="display: flex; flex-direction: column;">
+				<label>
+					<input type="checkbox" checked id="MouseClick" />
+					Mouse Click Event - happens once every time a mouse button is pressed down and quickly released again.
+				</label>
+				<label>
+					<input type="checkbox" id="MouseMove" />
+					Mouse Move Event - happens continuously while the mouse is being moved.
+				</label>
+				<label>
+					<input type="checkbox" id="MouseDown" />
+					Mouse Down Event - happens exactly once every time a mouse button is pressed down.
+				</label>
+				<label>
+					<input type="checkbox" id="MouseUp" />
+					Mouse Up Event - happens exactly once every time a mouse button is released.
+				</label>
+				<label>
+					<input type="checkbox" id="MouseEnter" />
+					Mouse Enter Event - happens every time the mouse enters the canvas.
+				</label>
+				<label>
+					<input type="checkbox" id="MouseLeave" />
+					Mouse Leave Event - happens every time the mouse leaves the canvas.
+				</label>
+				<label>
+					<input type="checkbox" id="MouseWheel" />
+					Mouse Wheel Event - happens each time the mouse wheel is turned.
+				</label>
+				<label>
+					<input type="checkbox" id="KeyDown" />
+					Key Down Event - happens exactly once every time a key is pressed down.
+				</label>
+				<label>
+					<input type="checkbox" id="KeyUp" />
+					Key Up Event - happens exactly once every time a key is released.
+				</label>
+				<label>
+					<input type="checkbox" id="KeyPress" />
+					Key Press Event - happens continuously while a key is being held down.
+				</label>
+				<label>
+					<input type="checkbox" id="WindowMove" />
+					Window Move Event - happens every time the CodeDraw window is moved.
+				</label>
+				<label>
+					<input type="checkbox" id="WindowClose" />
+					Window Close Event - happens exactly once after the user closes the window or cd.close() is called.
+				</label>
+			</div>
+			<hr>
+			<button id="copy" class="copy-button" type="button">Copy to clipboard</button>
+			<pre><code id="output" class="lang-java"></code></pre>
+		</div>
+	</body>
+</html>
